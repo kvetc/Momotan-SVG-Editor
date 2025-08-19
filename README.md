@@ -1,6 +1,6 @@
 # Momotan-SVG-Editor
 自带图标库的SVG图标编辑器
-An SVG icon editor with built-in icon library
+/nAn SVG icon editor with built-in icon library
 
 包含SVG代码编辑器、图标库、SVG格式互转、SVG画板，SVG代码编辑器支持通过元素添加面板快速添加SVG元素。支持自动保存和编辑历史记录。
 It includes an SVG code editor, icon library, SVG format conversion, and SVG drawing board. The SVG code editor supports quick addition of SVG elements through the element addition panel. Support automatic saving and editing of historical records.
