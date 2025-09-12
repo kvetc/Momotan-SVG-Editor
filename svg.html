@@ -1680,7 +1680,7 @@ select {
     display: block;
 			opacity: 1;
     		pointer-events: auto;
-			transform: translateY(10px);
+			transform: translateY(8px);
 }
 
 .dropdown-item {
@@ -8898,7 +8898,7 @@ function initStyleSettings() {
     textStyleTrigger.addEventListener('click', (e) => {
         e.stopPropagation();
         const rect = textStyleTrigger.getBoundingClientRect();
-        textStylePopup.style.top = `${rect.bottom + 10}px`;
+        textStylePopup.style.top = `${rect.bottom + 8}px`;
         textStylePopup.style.left = `${rect.left}px`;
         textStylePopup.classList.toggle('active');
     });
@@ -9394,7 +9394,7 @@ function updateElementPosition(element, dx, dy) {
         // 显示颜色选择器
         function showColorPicker() {
             const rect = colorDisplay.getBoundingClientRect();
-            colorPickerPopup.style.top = `${rect.bottom + 10}px`;
+            colorPickerPopup.style.top = `${rect.bottom + 8}px`;
             colorPickerPopup.style.left = `${rect.left}px`;
             colorPickerPopup.classList.toggle("active");
             
