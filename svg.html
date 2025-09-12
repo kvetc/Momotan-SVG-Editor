@@ -3,7 +3,7 @@ Momotan SVG Editor
 自带图标库的SVG图标编辑器 / An SVG icon editor with built-in icon library
 开发 / Developer：Aphasia (kvetc@outlook.com)
 版权 / Copyright：Copyright©2025, Aphasia
-版本 / Version：v1.0.23 release, 468 icons
+版本 / Version：v1.0.25 release, 475 icons
 基于 MIT 协议开源 / Licensed under the MIT License
 开源地址 / Open source address：https://github.com/kvetc/Momotan-SVG-Editor
 MIT 协议 / MIT License：
@@ -1467,11 +1467,19 @@ select {
 	background: #303030;
 }
 
+.search-container-svg {
+				position: absolute;
+				top: 10px;
+				left: 8px;
+				width:19px;
+				height:19px;
+			}
+
 .search-input {
 	color: #000000;
 	background: #f5f5f5;
     width: 100%;
-    padding: 8px 10px;
+    padding: 8px 10px 8px 30px;
     border: 1.5px solid rgba(0,0,0,0);
     border-radius: 8px;
     font-size: 16px;
@@ -1581,7 +1589,7 @@ select {
             height: 16px;
         }
 .copy-notification.show {
-  top: 50px;
+  top: 58px;
   opacity: 1;
 }
 
@@ -2066,6 +2074,14 @@ gap: 3px;
 			.search-container {
 			    width: 245px;
 			}
+
+			.search-container-svg {
+				position: absolute;
+				top: 9px;
+				left: 8px;
+				width:17px;
+				height:17px;
+			}
 			.dark-theme .search-container {
 				background: #303030;
 				width: 245px;
@@ -2081,10 +2097,10 @@ gap: 3px;
 				margin-top: 4px;
 			}
 			.search-input {
-				padding: 6px 10px;
+				padding: 6px 10px 6px 28px;
 			}
 			.dark-theme .search-input {
-				padding: 6px 10px;
+				padding: 6px 10px 6px 28px;
 			}
 			.search-result-icon {
     			margin-right: 10px;
@@ -2219,12 +2235,11 @@ margin: 0 0.5px;
 <p class="about-content">版权 / Copyright：
 <p class="about-sm">Copyright©2025, Aphasia
 <p class="about-content">版本 / Version：
-<p class="about-sm">v1.0.23 release, 468 icons
+<p class="about-sm">v1.0.25 release, 475 icons
 <p class="about-content">基于 MIT 协议开源
 <p class="about-sm">Licensed under the MIT License
-<p class="about-content">开源地址:
-<p class="about-sm">Open source address：
-<p class="about-content">https://github.com/kvetc/Momotan-SVG-Editor
+<p class="about-content">开源地址 / Open source address：
+<p class="about-sm" style="margin-bottom: 0px;">https://github.com/kvetc/Momotan-SVG-Editor
 </div>
 <div class="about-title">MIT 协议 / MIT License</div>
 <div class="about-inbox">
@@ -2258,11 +2273,10 @@ SOFTWARE.
 </div>
 <div class="about-title">octicons</div>
 <div class="about-inbox">
-<p class="about-content">版权（Copyright）
+<p class="about-content">版权 / Copyright
 <p class="about-sm">Copyright (c) 2025 GitHub Inc.
-<p class="about-content">开源地址
-<p class="about-sm">Open source address
-<p class="about-content">https://github.com/primer/octicons/tree/v19.15.5
+<p class="about-content">开源地址 / Open source address：
+<p class="about-sm" style="margin-bottom: 0px;">https://github.com/primer/octicons/tree/v19.15.5
 </div>
 <div class="about-title">MIT 协议原文 / MIT License</div>
 <div class="about-inbox">
@@ -2291,11 +2305,10 @@ SOFTWARE.
 
 <div class="about-title">heroicons</div>
 <div class="about-inbox">
-<p class="about-content">版权（Copyright）
+<p class="about-content">版权 / Copyright
 <p class="about-sm">Copyright (c) Tailwind Labs, Inc.
-<p class="about-content">开源地址
-<p class="about-sm">Open source address
-<p class="about-content">https://github.com/tailwindlabs/heroicons
+<p class="about-content">开源地址 / Open source address：
+<p class="about-sm" style="margin-bottom: 0px;">https://github.com/tailwindlabs/heroicons
 </div>
 <div class="about-title">MIT 协议原文 / MIT License</div>
 <div class="about-inbox">
@@ -3130,6 +3143,7 @@ SOFTWARE.
             <div class="panel-title">图标库</div>
             <!-- 搜索框 -->
             <div class="search-container">
+				<svg class="search-container-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon"><path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11ZM2 9a7 7 0 1 1 12.452 4.391l3.328 3.329a.75.75 0 1 1-1.06 1.06l-3.329-3.328A7 7 0 0 1 2 9Z" clip-rule="evenodd"/></svg>
                 <input type="text" class="search-input" placeholder="搜索图标...">
                 <!-- 搜索结果 -->
                 <div class="search-results"></div>
@@ -3338,14 +3352,14 @@ SOFTWARE.
         </div>
         
         <!-- stroke-width设置 -->
-        <div class="setting-item">
+        <div class="setting-item dropdown-trigger" style="padding-right: 0px; padding-left: 6px; border-right: 0px; gap: 5px;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="18" y1="20" x2="18" y2="10"></line>
                 <line x1="12" y1="20" x2="12" y2="4"></line>
                 <line x1="6" y1="20" x2="6" y2="14"></line>
             </svg>
             <div class="setting-value">
-                <input type="number" class="setting-input-color" id="stroke-width-input" value="2" min="0.5" step="0.5" placeholder="宽度">
+                <input type="number" class="setting-input-color" style="border-top-left-radius: 0px; border-bottom-left-radius: 0px;" id="stroke-width-input" value="2" min="0.5" step="0.5" placeholder="宽度">
             </div>
         </div>
         <!-- 文本样式按钮 -->
@@ -3612,6 +3626,12 @@ SOFTWARE.
                     name: '心形2',
                     category: 'basic',
                     svg: '<svg viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m8 14.25.345.666a.75.75 0 0 1-.69 0l-.008-.004-.018-.01a7.152 7.152 0 0 1-.31-.17 22.055 22.055 0 0 1-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.066 22.066 0 0 1-3.744 2.584l-.018.01-.006.003h-.002ZM4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.58 20.58 0 0 0 8 13.393a20.58 20.58 0 0 0 3.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.749.749 0 0 1-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5Z"/></svg>'
+                },
+				{
+                    id: 'heart3',
+                    name: '心形3',
+                    category: 'basic',
+                    svg: '<svg viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m8 14.25.345.666a.75.75 0 0 1-.69 0l-.008-.004-.018-.01a7.152 7.152 0 0 1-.31-.17 22.055 22.055 0 0 1-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.066 22.066 0 0 1-3.744 2.584l-.018.01-.006.003h-.002Z"/></svg>'
                 },
 				{
                     id: 'square_circles',
@@ -4495,8 +4515,8 @@ SOFTWARE.
                     svg: '<svg viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M0 1.75A.75.75 0 0 1 .75 1h4.253c1.227 0 2.317.59 3 1.501A3.743 3.743 0 0 1 11.006 1h4.245a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75h-4.507a2.25 2.25 0 0 0-1.591.659l-.622.621a.75.75 0 0 1-1.06 0l-.622-.621A2.25 2.25 0 0 0 5.258 13H.75a.75.75 0 0 1-.75-.75Zm7.251 10.324.004-5.073-.002-2.253A2.25 2.25 0 0 0 5.003 2.5H1.5v9h3.757a3.75 3.75 0 0 1 1.994.574ZM8.755 4.75l-.004 7.322a3.752 3.752 0 0 1 1.992-.572H14.5v-9h-3.495a2.25 2.25 0 0 0-2.25 2.25Z"/></svg>'
                 },
 				{
-                    id: 'chat',
-                    name: '聊天气泡/对话',
+                    id: 'chat/comment',
+                    name: '聊天气泡/对话/评论',
                     category: 'interface',
                     svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>'
                 },
@@ -5473,6 +5493,12 @@ SOFTWARE.
                     category: 'interface',
                     svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon"><path d="M10 1a6 6 0 0 0-3.815 10.631C7.237 12.5 8 13.443 8 14.456v.644a.75.75 0 0 0 .572.729 6.016 6.016 0 0 0 2.856 0A.75.75 0 0 0 12 15.1v-.644c0-1.013.762-1.957 1.815-2.825A6 6 0 0 0 10 1ZM8.863 17.414a.75.75 0 0 0-.226 1.483 9.066 9.066 0 0 0 2.726 0 .75.75 0 0 0-.226-1.483 7.553 7.553 0 0 1-2.274 0Z"/></svg>'
                 },
+				{
+                    id: 'light-bulb3',
+                    name: '电灯泡3',
+                    category: 'interface',
+                    svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" vertical-align="middle"><g fill="none"><path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="currentColor" d="M13 20a1 1 0 1 1 0 2h-2a1 1 0 1 1 0-2zM12 2c4.41 0 8 3.543 8 7.933c0 3.006-1.522 5.196-2.78 6.494l-.284.283l-.27.252l-.252.22l-.33.27l-.328.244c-.196.138-.34.329-.466.535l-.145.251l-.141.252c-.24.412-.518.766-1.111.766h-3.786c-.593 0-.871-.354-1.11-.766l-.213-.378c-.145-.253-.305-.494-.54-.66l-.232-.171l-.199-.155l-.227-.188l-.252-.22l-.27-.252l-.285-.283C5.522 15.129 4 12.939 4 9.933C4 5.543 7.59 2 12 2m0 2C8.677 4 6 6.665 6 9.933c0 2.624 1.533 4.494 2.593 5.471l.245.218l.22.182l.27.208l.072.052c.315.222.549.531.762.854l.373.582h2.93l.373-.582c.213-.323.447-.632.762-.854l.243-.182l.206-.165l.233-.2C16.342 14.576 18 12.662 18 9.933C18 6.665 15.323 4 12 4m.293 2.293a1 1 0 0 1 1.497 1.32l-.083.094L12.414 9l1.286 1.286c.364.364.392.937.084 1.333l-.084.095l-1.993 1.993a1 1 0 0 1-1.497-1.32l.083-.094L11.586 11L10.3 9.714a1.01 1.01 0 0 1-.084-1.333l.084-.095z"/></g></svg>'
+                },
 				
 				{
                     id: 'location/gps',
@@ -5990,6 +6016,42 @@ SOFTWARE.
                     name: '动态/风车',
                     category: 'interface',
                     svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" vertical-align="middle"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 12c2.76 0 5-2.01 5-4.5S14.76 3 12 3zm0 0c0 2.76 2.01 5 4.5 5s4.5-2.24 4.5-5zm0 0c-2.76 0-5 2.01-5 4.5S9.24 21 12 21zm0 0c0-2.76-2.01-5-4.5-5S3 9.24 3 12z"/></svg>'
+                },
+				{
+                    id: 'list-single-columns',
+                    name: '列表-单列',
+                    category: 'interface',
+                    svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" vertical-align="middle"><g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="currentColor" d="M7 13a2 2 0 0 1 1.995 1.85L9 15v3a2 2 0 0 1-1.85 1.995L7 20H4a2 2 0 0 1-1.995-1.85L2 18v-3a2 2 0 0 1 1.85-1.995L4 13zm9 4a1 1 0 0 1 .117 1.993L16 19h-4a1 1 0 0 1-.117-1.993L12 17zm-9-2H4v3h3zm13-2a1 1 0 1 1 0 2h-8a1 1 0 1 1 0-2zM7 3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm9 4a1 1 0 0 1 .117 1.993L16 9h-4a1 1 0 0 1-.117-1.993L12 7zM7 5H4v3h3zm13-2a1 1 0 0 1 .117 1.993L20 5h-8a1 1 0 0 1-.117-1.993L12 3z"/></g></svg>'
+                },
+				{
+                    id: 'list-single-columns-fill',
+                    name: '列表-单列-填充',
+                    category: 'interface',
+                    svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" vertical-align="middle"><g fill="none"><path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="currentColor" d="M7 13a2 2 0 0 1 1.995 1.85L9 15v3a2 2 0 0 1-1.85 1.995L7 20H4a2 2 0 0 1-1.995-1.85L2 18v-3a2 2 0 0 1 1.85-1.995L4 13zm9 4a1 1 0 0 1 .117 1.993L16 19h-4a1 1 0 0 1-.117-1.993L12 17zm4-4a1 1 0 1 1 0 2h-8a1 1 0 1 1 0-2zM7 3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm9 4a1 1 0 0 1 .117 1.993L16 9h-4a1 1 0 0 1-.117-1.993L12 7zm4-4a1 1 0 0 1 .117 1.993L20 5h-8a1 1 0 0 1-.117-1.993L12 3z"/></g></svg>'
+                },
+				{
+                    id: 'list-two-columns',
+                    name: '列表-双列',
+                    category: 'interface',
+                    svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" vertical-align="middle"><g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="currentColor" d="M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zm8 0H5v6h6zm2 0v6h6V5zm-2 8H5v6h6zm2 6v-6h6v6z"/></g></svg>'
+                },
+				{
+                    id: 'list-two-columns-fill',
+                    name: '列表-双列-填充',
+                    category: 'interface',
+                    svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" vertical-align="middle"><g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="currentColor" d="M3 5a2 2 0 0 1 2-2h6v8H3zm8 8H3v6a2 2 0 0 0 2 2h6zm2 8h6a2 2 0 0 0 2-2v-6h-8zm0-10V3h6a2 2 0 0 1 2 2v6z"/></g></svg>'
+                },
+				{
+                    id: 'list-three-columns',
+                    name: '列表-三列',
+                    category: 'interface',
+                    svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" vertical-align="middle"><g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0zM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z"/><path fill="currentColor" d="M20 4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zM8 15H4v3h4zm6 0h-4v3h4zm6 0h-4v3h4zm-6-4h-4v2h4zm-6 0H4v2h4zm12 0h-4v2h4zm-6-5h-4v3h4zM8 6H4v3h4zm12 0h-4v3h4z"/></g></svg>'
+                },
+				{
+                    id: 'list-three-columns-fill',
+                    name: '列表-三列-填充',
+                    category: 'interface',
+                    svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" vertical-align="middle"><g fill="none"><path d="M24 0v24H0V0zM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z"/><path fill="currentColor" d="M2 6a2 2 0 0 1 2-2h3v4H2zm0 4v4h5v-4zm7 0v4h6v-4zm8 0v4h5v-4zm5-2V6a2 2 0 0 0-2-2h-3v4zm-7 0H9V4h6zM2 16h5v4H4a2 2 0 0 1-2-2zm13 0H9v4h6zm5 4h-3v-4h5v2a2 2 0 0 1-2 2"/></g></svg>'
                 },
 
             ],
