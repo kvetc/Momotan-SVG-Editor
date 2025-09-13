@@ -3,7 +3,7 @@ Momotan SVG Editor
 自带图标库的SVG图标编辑器 / An SVG icon editor with built-in icon library
 开发 / Developer：Aphasia (kvetc@outlook.com)
 版权 / Copyright：Copyright©2025, Aphasia
-版本 / Version：v1.0.25 release, 475 icons
+版本 / Version：v1.0.26 release, 475 icons
 基于 MIT 协议开源 / Licensed under the MIT License
 开源地址 / Open source address：https://github.com/kvetc/Momotan-SVG-Editor
 MIT 协议 / MIT License：
@@ -565,7 +565,7 @@ select {
 	opacity: 0;
     pointer-events: none;
 	transform: translateY(-10px);   
-	max-height: calc(100vh - 200px);
+	max-height: calc(100vh - 199px);
 	overflow-y: auto;
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1);
 }
@@ -2235,7 +2235,7 @@ margin: 0 0.5px;
 <p class="about-content">版权 / Copyright：
 <p class="about-sm">Copyright©2025, Aphasia
 <p class="about-content">版本 / Version：
-<p class="about-sm">v1.0.25 release, 475 icons
+<p class="about-sm">v1.0.26 release, 475 icons
 <p class="about-content">基于 MIT 协议开源
 <p class="about-sm">Licensed under the MIT License
 <p class="about-content">开源地址 / Open source address：
@@ -2343,7 +2343,7 @@ SOFTWARE.
         <!-- 侧边栏 -->
         <div class="sidebar">
             <button class="sidebar-btn active" id="btn-editor" title="SVG代码编辑器">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 18 22 12 18 6"/><polyline points="6 6 2 12 6 18"/><line x1="14" y1="3" x2="10" y2="21"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" transform="scale(1.15)"><path fill-rule="evenodd" d="M6.28 5.22a.75.75 0 0 1 0 1.06L2.56 10l3.72 3.72a.75.75 0 0 1-1.06 1.06L.97 10.53a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0Zm7.44 0a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L17.44 10l-3.72-3.72a.75.75 0 0 1 0-1.06ZM11.377 2.011a.75.75 0 0 1 .612.867l-2.5 14.5a.75.75 0 0 1-1.478-.255l2.5-14.5a.75.75 0 0 1 .866-.612Z" clip-rule="evenodd"/></svg>
             </button>
 
             <button class="sidebar-btn" id="btn-icons" title="图标库">
@@ -2351,11 +2351,7 @@ SOFTWARE.
             </button>
 
             <button class="sidebar-btn" id="btn-convert" title="格式转换">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <polyline points="22 4 22 10 16 10"/>
-    <polyline points="2 20 2 14 8 14"/>
-    <path d="M3.51 9a9 9 0 0 1 14.85-3.36L22 10M2 14l3.64 4.36A9 9 0 0 0 20.49 15"/>
-  </svg>
+				<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M14.295 8.005a.75.75 0 0 0-.834.656 5.5 5.5 0 0 1-9.592 2.97l1.204-1.204a.25.25 0 0 0-.177-.427H1.25a.25.25 0 0 0-.25.25v3.646a.25.25 0 0 0 .427.177l1.38-1.38A7.002 7.002 0 0 0 14.95 8.84a.75.75 0 0 0-.656-.834ZM8 2.5a5.487 5.487 0 0 1 4.131 1.869l-1.204 1.204a.25.25 0 0 0 .177.427h3.646a.25.25 0 0 0 .25-.25V2.104a.25.25 0 0 0-.427-.177l-1.38 1.38A7.002 7.002 0 0 0 1.05 7.16a.75.75 0 0 0 1.49.178A5.5 5.5 0 0 1 8 2.5Z"/></svg>
             </button>
 
             <button class="sidebar-btn" id="btn-canvas" title="SVG画板">
@@ -2366,18 +2362,15 @@ SOFTWARE.
             </button>
 
             <button class="sidebar-btn" id="btn-history" title="历史记录">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="12" cy="12" r="10"/>
-    <polyline points="16 16 12 13 12 6"/>
-  </svg>
+                <svg viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" transform="scale(0.92)"><path d="m.427 1.927 1.215 1.215a8.002 8.002 0 1 1-1.6 5.685.75.75 0 1 1 1.493-.154 6.5 6.5 0 1 0 1.18-4.458l1.358 1.358A.25.25 0 0 1 3.896 6H.25A.25.25 0 0 1 0 5.75V2.104a.25.25 0 0 1 .427-.177ZM7.75 4a.75.75 0 0 1 .75.75v2.992l2.028.812a.75.75 0 0 1-.557 1.392l-2.5-1A.751.751 0 0 1 7 8.25v-3.5A.75.75 0 0 1 7.75 4Z"/></svg>
             </button>
 
             <button class="sidebar-btn2" id="btn-theme" title="切换主题">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="scale(1.08)"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
             </button>
 
 			<button class="sidebar-btn2" id="btn-about">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="scale(1.01)"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
             </button>
         </div>
         
@@ -2580,7 +2573,7 @@ SOFTWARE.
 <div class="setting-item">不透明度（0~1）</div>
         <input type="number" class="setting-input" id="rect-opacity" value="1" min="0" max="1" step="0.1">
         <div class="setting-item">线条宽度</div>
-        <input type="number" class="setting-input" id="rect-stroke-width" value="2" min="0.5" step="0.5">
+        <input type="number" class="setting-input" id="rect-stroke-width" value="2" min="0" step="0.5">
         
         <div class="setting-item">线端点</div>
         <select class="setting-input" id="rect-stroke-linecap">
@@ -2806,7 +2799,7 @@ SOFTWARE.
         <div class="setting-item">不透明度（0~1）</div>
         <input type="number" class="setting-input" id="polygon-opacity" value="1" min="0" max="1" step="0.1">
         <div class="setting-item">线条宽度</div>
-        <input type="number" class="setting-input" id="polygon-stroke-width" value="2" min="0.5" step="0.5">
+        <input type="number" class="setting-input" id="polygon-stroke-width" value="2" min="0" step="0.5">
         
         <div class="setting-item">线端点</div>
         <select class="setting-input" id="polygon-stroke-linecap">
@@ -2864,7 +2857,7 @@ SOFTWARE.
         <input type="number" class="setting-input" id="circle-opacity" value="1" min="0" max="1" step="0.1">            
         
         <div class="setting-item">线条宽度</div>
-        <input type="number" class="setting-input" id="circle-stroke-width" value="2" min="0.5" step="0.5">
+        <input type="number" class="setting-input" id="circle-stroke-width" value="2" min="0" step="0.5">
     </div>
     <div class="popup-actions">
         <button class="btn btn-sm btn-secondary" data-action="close-popup"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="5" y1="19" x2="19" y2="5"/></svg>取消</button>
@@ -2897,7 +2890,7 @@ SOFTWARE.
 <div class="setting-item">不透明度（0~1）</div>
         <input type="number" class="setting-input" id="ellipse-opacity" value="1" min="0" max="1" step="0.1">            
         <div class="setting-item">线条宽度</div>
-        <input type="number" class="setting-input" id="ellipse-stroke-width" value="2" min="0.5" step="0.5">
+        <input type="number" class="setting-input" id="ellipse-stroke-width" value="2" min="0" step="0.5">
     </div>
     <div class="popup-actions">
         <button class="btn btn-sm btn-secondary" data-action="close-popup"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="5" y1="19" x2="19" y2="5"/></svg>取消</button>
@@ -2928,7 +2921,7 @@ SOFTWARE.
 <div class="setting-item">不透明度（0~1）</div>
         <input type="number" class="setting-input" id="triangle-opacity" value="1" min="0" max="1" step="0.1">            
         <div class="setting-item">线条宽度</div>
-        <input type="number" class="setting-input" id="triangle-stroke-width" value="2" min="0.5" step="0.5">
+        <input type="number" class="setting-input" id="triangle-stroke-width" value="2" min="0" step="0.5">
         
         <div class="setting-item">线端点</div>
         <select class="setting-input" id="triangle-stroke-linecap">
@@ -3155,7 +3148,7 @@ SOFTWARE.
                 <div class="category-tab" data-category="basic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12,2 3.4,7 3.4,17 12,22 20.6,17 20.6,7 12,2"/></svg>基础图形</div>
                 <div class="category-tab" data-category="arrows"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>箭头类</div>
                 <div class="category-tab" data-category="interface"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><path d="M3 9h18M9 21V9"></path></svg>界面元素</div>
-                <div class="category-tab" data-category="symbols"><svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 1C5.923 1 1 5.923 1 12c0 4.867 3.149 8.979 7.521 10.436.55.096.756-.233.756-.522 0-.262-.013-1.128-.013-2.049-2.764.509-3.479-.674-3.699-1.292-.124-.317-.66-1.293-1.127-1.554-.385-.207-.936-.715-.014-.729.866-.014 1.485.797 1.691 1.128.99 1.663 2.571 1.196 3.204.907.096-.715.385-1.196.701-1.471-2.448-.275-5.005-1.224-5.005-5.432 0-1.196.426-2.186 1.128-2.956-.111-.275-.496-1.402.11-2.915 0 0 .921-.288 3.024 1.128a10.193 10.193 0 0 1 2.75-.371c.936 0 1.871.123 2.75.371 2.104-1.43 3.025-1.128 3.025-1.128.605 1.513.221 2.64.111 2.915.701.77 1.127 1.747 1.127 2.956 0 4.222-2.571 5.157-5.019 5.432.399.344.743 1.004.743 2.035 0 1.471-.014 2.654-.014 3.025 0 .289.206.632.756.522C19.851 20.979 23 16.854 23 12c0-6.077-4.922-11-11-11Z"/></svg>LOGO</div>
+                <div class="category-tab" data-category="symbols"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" vertical-align="middle"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2c2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2a4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6c-.6.6-.6 1.2-.5 2V21"/></svg>LOGO</div>
             </div>
         </div>
         <div class="panel-body">
@@ -3178,7 +3171,7 @@ SOFTWARE.
             </div>
             <div class="icon-actions" id="icon-actions" style="display: none;">
                 <button class="btn btn-primary" id="icon-open-editor">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 18 22 12 18 6"/><polyline points="6 6 2 12 6 18"/><line x1="14" y1="3" x2="10" y2="21"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" transform="scale(1.10)"><path fill-rule="evenodd" d="M6.28 5.22a.75.75 0 0 1 0 1.06L2.56 10l3.72 3.72a.75.75 0 0 1-1.06 1.06L.97 10.53a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0Zm7.44 0a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L17.44 10l-3.72-3.72a.75.75 0 0 1 0-1.06ZM11.377 2.011a.75.75 0 0 1 .612.867l-2.5 14.5a.75.75 0 0 1-1.478-.255l2.5-14.5a.75.75 0 0 1 .866-.612Z" clip-rule="evenodd"/></svg>
                     在编辑器中打开
                 </button>
                 <button class="btn btn-primary" id="icon-copy-code">
@@ -3264,7 +3257,7 @@ SOFTWARE.
                             <div id="code-input-container" style="display: none;">
                                 <textarea class="setting-input-big" id="convert-svg-code" rows="6" placeholder="输入SVG代码……"></textarea>
                             </div>
-                            <button class="btn btn-primary" id="convert-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 4 22 10 16 10"/> <polyline points="2 20 2 14 8 14"/> <path d="M3.51 9a9 9 0 0 1 14.85-3.36L22 10M2 14l3.64 4.36A9 9 0 0 0 20.49 15"/> </svg>开始转换</button>
+                            <button class="btn btn-primary" id="convert-btn"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M14.295 8.005a.75.75 0 0 0-.834.656 5.5 5.5 0 0 1-9.592 2.97l1.204-1.204a.25.25 0 0 0-.177-.427H1.25a.25.25 0 0 0-.25.25v3.646a.25.25 0 0 0 .427.177l1.38-1.38A7.002 7.002 0 0 0 14.95 8.84a.75.75 0 0 0-.656-.834ZM8 2.5a5.487 5.487 0 0 1 4.131 1.869l-1.204 1.204a.25.25 0 0 0 .177.427h3.646a.25.25 0 0 0 .25-.25V2.104a.25.25 0 0 0-.427-.177l-1.38 1.38A7.002 7.002 0 0 0 1.05 7.16a.75.75 0 0 0 1.49.178A5.5 5.5 0 0 1 8 2.5Z"/></svg>开始转换</button>
                         </div>
                         <div class="convert-result" id="convert-result">
                             <div class="preview-preview-placeholder">
@@ -3503,7 +3496,7 @@ SOFTWARE.
                                 导出PNG
                             </button>
 							<button class="btn btn-sm btn-secondary btn-main" id="canvas-to-editor">
-                				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 18 22 12 18 6"/><polyline points="6 6 2 12 6 18"/><line x1="14" y1="3" x2="10" y2="21"/></svg>
+                				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" transform="scale(1.10)"><path fill-rule="evenodd" d="M6.28 5.22a.75.75 0 0 1 0 1.06L2.56 10l3.72 3.72a.75.75 0 0 1-1.06 1.06L.97 10.53a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0Zm7.44 0a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L17.44 10l-3.72-3.72a.75.75 0 0 1 0-1.06ZM11.377 2.011a.75.75 0 0 1 .612.867l-2.5 14.5a.75.75 0 0 1-1.478-.255l2.5-14.5a.75.75 0 0 1 .866-.612Z" clip-rule="evenodd"/></svg>
                 			转到编辑器
             				</button>
                         </div>
@@ -9693,7 +9686,7 @@ rgbInput.addEventListener('blur', () => {
         updateColorDisplay();
     }
 
-    // 页面加载完成后初始化
+    // 页面加载完成后初始化 width="40" height="40"
     document.addEventListener('DOMContentLoaded', init);
 </script>
 </body>
