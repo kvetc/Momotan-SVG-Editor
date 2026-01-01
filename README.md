@@ -4,6 +4,10 @@
   
 包含SVG代码编辑器、图标库、SVG格式互转、SVG画板，SVG代码编辑器支持通过元素添加面板快速添加SVG元素。图标库包含700+图标。全局支持自动保存和编辑历史记录。  
 It includes an SVG code editor, icon library, SVG format conversion, and SVG drawing board. The SVG code editor supports quick addition of SVG elements through the element addition panel. The icon library contains over 700 icons. Global support for automatic saving and editing of historical records.  
+
+<img width="1971" height="1443" alt="image" src="https://github.com/user-attachments/assets/5d379dfc-d558-45ad-b425-0aea1c03944a" />
+<img width="1978" height="1450" alt="image" src="https://github.com/user-attachments/assets/dfb34677-3a7a-4c31-87d5-7aa77d2c098c" />
+<img width="1978" height="1452" alt="image" src="https://github.com/user-attachments/assets/5f6caa47-ca49-4494-82a3-a6afb80482d8" />
   
 它是一个网页应用，默认为单个html文件，不过也可以拆分为多个文件。  
 It is a web application that defaults to a single HTML file, but can also be split into multiple files.  
