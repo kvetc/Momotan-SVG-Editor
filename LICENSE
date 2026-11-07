@@ -22,7 +22,7 @@ SOFTWARE.
 
 
 Third party component license statement
-The icon library of this project uses the following open-source components(icon packages) based on the MIT license:
+The icon library of this project uses the following third-party components (icon packages)
 
 octicons
 Copyright (c) 2025 GitHub Inc.
@@ -81,5 +81,6 @@ SOFTWARE.
 Iconsax
 Copyright (c) Vuesax ​& Lusaxweb
 https://iconsax.io
+https://github.com/lusaxweb/iconsax
 ------------------------
 This project utilizes icons provided by Iconsax https://iconsax.io (ICONSAX FREE LICENSE).
