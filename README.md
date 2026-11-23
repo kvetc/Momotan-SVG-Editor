@@ -3,8 +3,8 @@
 **An SVG icon editor with built-in icon library**  
 在线体验 / Online experience: https://momotan.cc/svg  
 
-当前版本 / Version：v3.4.2 release  
-图标库图标数量 / Number of icons in the icon library：800  
+当前版本 / Version：v3.4.3 release  
+图标库图标数量 / Number of icons in the icon library：804  
   
 包含SVG代码编辑器、图标库、SVG格式互转、SVG画板，SVG代码编辑器支持通过元素添加面板快速添加SVG元素、代码语法高亮等功能。图标库包含800+图标。全局支持自动保存和编辑历史记录。  
 It includes an SVG code editor, icon library, SVG format conversion, SVG drawing board. The SVG code editor supports quick addition of SVG elements through the element addition panel, code syntax highlighting, and other functions. The icon library contains over 800 icons. Global support for automatic saving and editing of historical records. 
